@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>کارشناسی تخصصی آقای کامپیوتر</title>
+	<title>کارشناسی قیمت</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +15,7 @@
 
 	<div class="wrapper fadeInDown logpage">
 		<div id="formContent">
-			<div><p class="p-4">به کارشناسی قیمت آقای کامپیوتر خوش آمدید</p></div>
+			<div><p class="p-4">به کارشناسی قیمت خوش آمدید</p></div>
 			<input type="text" id="uname" class="fadeIn second" name="uname" placeholder="نام و نام خانوادگی">
 			<input type="number" id="uphone" class="fadeIn third" name="uphone" placeholder="تلفن همراه">
 			<input type="button" class="fadeIn fourth showbt" value="ورود">
@@ -79,7 +79,7 @@
 																	<div
 																		class="row justify-content-center align-items-center">
 																		<div class="col-12" style="text-align: center;">
-																			<h2 class="pt-0">کارشناسی تخصصی قیمت <br>آقای
+																			<h2 class="pt-0">کارشناسی تخصصی قیمت <br>
 																				کامپیوتر</h1>
 																		</div>
 
@@ -1964,7 +1964,7 @@
 												<input class="form-check-input" type="checkbox" value=""
 													data-toggle="modal" data-target="#lastmod" id="confirmation2">
 												<label class="form-check-label" for="confirmation2">
-													مایلم به آقای کامپیوتر بفروشم
+													مایلم بفروشم
 												</label>
 											</div>
 										</div>
@@ -1981,7 +1981,7 @@
 														</button>
 													</div>
 													<div class="modal-body">
-														در صورتی که آقای کامپیوتر قصد خرید سیستم شما را داشته باشد،
+														در صورتی که قصد خرید سیستم شما را داشته باشد،
 														همکاران ما با شما در اسرع وقت (یک روز کاری) تماس خواهند گرفت
 													</div>
 													<div class="modal-footer">
@@ -2034,7 +2034,7 @@
 
 		function ajaxreq(reqs){
 			jQuery.ajax({
-                    url: 'http://192.168.2.158/mrp30/admin/api/v3/api.php',
+                    url: 'http://192.168.2.158/admin/api/v3/api.php',
                     method: 'POST',
                     dataType: 'json',
                     data: { req: reqs}
@@ -2090,7 +2090,7 @@
 			var monitordata = [];
 
 			jQuery.ajax({
-                    url: 'http://192.168.2.158/mrp30/admin/api/v3/api.php',
+                    url: 'http://192.168.2.158/admin/api/v3/api.php',
                     method: 'POST',
                     dataType: 'json',
                     data: { req: "init"}
@@ -2154,7 +2154,7 @@
 					sys_socket = mb_data[0].socket;
 					sys_mtype = mb_data[0].mtype;
 					jQuery.ajax({
-						url: 'http://192.168.2.158/mrp30/admin/api/v3/api.php',
+						url: 'http://192.168.2.158/admin/api/v3/api.php',
 						method: 'POST',
 						dataType: 'json',
 						data: { req: "syscpu"}
@@ -2222,7 +2222,7 @@
 				if(sys_mtype)
 				{
 					jQuery.ajax({
-						url: 'http://192.168.2.158/mrp30/admin/api/v3/api.php',
+						url: 'http://192.168.2.158/admin/api/v3/api.php',
 						method: 'POST',
 						dataType: 'json',
 						data: { req: "sysram"}
@@ -2299,7 +2299,7 @@
 			
 			$('#rammodel').on('select2:select', function (e) {
 					jQuery.ajax({
-							url: 'http://192.168.2.158/mrp30/admin/api/v3/api.php',
+							url: 'http://192.168.2.158/admin/api/v3/api.php',
 							method: 'POST',
 							dataType: 'json',
 							data: { req: "sysgfx"}
@@ -2356,7 +2356,7 @@
 
 
 			jQuery.ajax({
-					url: 'http://192.168.2.158/mrp30/admin/api/v3/api.php',
+					url: 'http://192.168.2.158/admin/api/v3/api.php',
 					method: 'POST',
 					dataType: 'json',
 					data: { req: "sysall"}
@@ -2710,7 +2710,7 @@
 			
 		
 		jQuery('.mod1').on('click', function(){
-  			$("#contentBody").html('<object data="http://mrp30.com"/>');
+  			$("#contentBody").html('<object data="http://google.com"/>');
 		});
 		});
 	</script>
